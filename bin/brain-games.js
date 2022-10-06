@@ -1,5 +1,9 @@
 #!/usr/bin/env node
-import { askName } from '../src/cli.js';
+import { checkEven } from './brain-even.js';
+import { nameOfUser } from '../src/cli.js';
 
-console.log('Welcome to the Brain Games!');
-console.log(`Hello, ${askName()}!`);
+function main() {
+  console.log(`Hello, ${nameOfUser}!`);
+}
+
+main();
