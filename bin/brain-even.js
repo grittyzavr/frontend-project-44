@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* eslint-disable import/prefer-default-export */
 
-import { game, randomNumber } from '../src/index.js';
+import { game } from '../src/index.js';
 
 const taskOfGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 // TODO: перенести всю логику в index.js(возможно другие файлы)
@@ -10,10 +10,5 @@ const taskOfGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 // eslint-disable-next-line import/prefer-default-export
 
 export default function brainEven() {
-  for (let i = 0; i < 3; i += 1) {
-    const isEven = (num) => num % 2 === 0;
-    const question = randomNumber();
-    const answer = isEven(question) ? 'yes' : 'no';
-    game(taskOfGame, question, answer);
-  }
+  game(taskOfGame);
 }
