@@ -2,15 +2,14 @@
 import readlineSync from 'readline-sync';
 import { nameOfUser } from './cli.js';
 
-export const randomNumbers = Array.from({ length: 3 }, () => Math.floor(Math.random() * 100));
+export const randomNumber = () => Math.floor(Math.random() * 100);
 
-export function game(taskOfGame) {
+export function game(taskOfGame, question) {
+  console.log(taskOfGame);
   for (let i = 0; i < 3; i += 1) {
-    console.log(taskOfGame);
-    console.log(`Question: ${randomNumbers[i]}`);
+    const [random, answer] = question();
+    console.log(`Question: ${random}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    const isEven = (num) => num % 2 === 0;
-    const answer = isEven(randomNumbers[i]) ? 'yes' : 'no';
     if (userAnswer === answer) {
       console.log('Correct!');
     } if (userAnswer !== answer) {
