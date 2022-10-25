@@ -2,7 +2,7 @@
 import readlineSync from 'readline-sync';
 import { nameOfUser } from './cli.js';
 
-export const randomNumber = () => Math.floor(Math.random() * 100);
+export const randomNumber = (number = 100) => Math.floor(Math.random() * number);
 
 export function game(taskOfGame, question) {
   console.log(taskOfGame);
