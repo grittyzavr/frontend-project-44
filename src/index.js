@@ -18,5 +18,5 @@ export function game(taskOfGame, question) {
       return;
     }
   }
-  console.log(`Congratulations, ${nameOfUser}`);
+  console.log(`Congratulations, ${nameOfUser}!`);
 }
