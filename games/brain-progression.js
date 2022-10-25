@@ -15,8 +15,9 @@ const expression = () => {
     length: Math.ceil(randomLength),
   }, (_, i) => (i + 1) * randomSum);
   const randomItem = arrayExpression[Math.floor(Math.random() * arrayExpression.length)];
-  arrayExpression[arrayExpression.indexOf(randomItem)] = '*';
-  return [arrayExpression, String(randomItem)];
+  arrayExpression[arrayExpression.indexOf(randomItem)] = '..';
+  const expressionString = arrayExpression.join(' ');
+  return [expressionString, String(randomItem)];
 };
 
 export default function brainProgression() {
