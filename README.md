@@ -3,7 +3,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/898eac2aadd8fe2f8efa/maintainability)](https://codeclimate.com/github/grittyzavr/frontend-project-44/maintainability)
 
 # Description
-## 5 simple cli games, just watch video.
+### 5 simple cli games, just watch video.
 
 # start of game
 ## brain-games
