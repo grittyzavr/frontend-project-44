@@ -11,9 +11,9 @@ export function game(taskOfGame, question) {
     console.log(`Question: ${random} `);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === answer) {
-      console.log('Correct!');
+      console.log('Correct! ');
     } if (userAnswer !== answer) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}')`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}').`);
       console.log(`Let's try again, ${nameOfUser}`);
       return;
     }
