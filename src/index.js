@@ -8,7 +8,7 @@ export function game(taskOfGame, question) {
   console.log(taskOfGame);
   for (let i = 0; i < 3; i += 1) {
     const [random, answer] = question();
-    console.log(`Question: ${random}`);
+    console.log(`Question: ${random} `);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === answer) {
       console.log('Correct!');
