@@ -2,6 +2,9 @@ import { game, randomNumber } from '../src/index.js';
 
 const taskOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 function testPrime(n) {
+  if (n === 0) {
+    return false;
+  }
   if (n === 1) {
     return false;
   } if (n === 2) {
@@ -18,9 +21,6 @@ function testPrime(n) {
 const question = () => {
   const randomQuestionNumber = randomNumber(100);
   let answer = '';
-  if (randomQuestionNumber === 0) {
-    answer = 'no';
-  }
   if (testPrime(randomQuestionNumber) === true) {
     answer = 'yes';
   } else {
