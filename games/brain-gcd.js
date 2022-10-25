@@ -16,7 +16,7 @@ const expression = () => {
 
 const question = () => {
   const [firstNumber, secondNumber] = expression();
-  return [`${firstNumber} ${secondNumber}`, String(gcd(firstNumber, secondNumber))];
+  return [`${firstNumber} ${secondNumber}`, gcd(firstNumber, secondNumber)];
 };
 
 export default function brainGcd() {
