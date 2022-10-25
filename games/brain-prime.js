@@ -18,6 +18,9 @@ function testPrime(n) {
 const question = () => {
   const randomQuestionNumber = randomNumber(100);
   let answer = '';
+  if (randomQuestionNumber === 0) {
+    answer = 'no';
+  }
   if (testPrime(randomQuestionNumber) === true) {
     answer = 'yes';
   } else {
