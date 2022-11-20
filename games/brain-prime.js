@@ -2,7 +2,7 @@ import { game, randomNumber } from '../src/index.js';
 
 const taskOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 function testPrime(n) {
-  if (n === 0 || n === 1) {
+  if (n <= 1) {
     return false;
   }
   if (n === 2) {
